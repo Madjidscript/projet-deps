@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/association.css">
+    <link rel="stylesheet" href="../css/datatables.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="test"><h1>Association</h1></div>
+        <div class="profile">
+            <span>👤</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="table-header">
+            <h2 >Tableau association</h2>
+            <!-- Bouton pour importer 
+            <label for="fileInput" style="margin-right: 10px;">
+                <input type="file" id="fileInput" accept=".csv" style="display: none;">
+                <button id="importBtn">Importer</button>
+            </label> -->
+
+            <label for="fileInput" class="custom-file-label">
+                <span>📂 Importer un fichier</span>
+            </label>
+            <input type="file" id="fileInput" accept=".csv">
+        </div>
+
+        <!-- Tableau DataTables -->
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nombre de membres</th>
+                    <th>Source de financement</th>
+                    <th>Nombre de manifestations tenues/an</th>
+                    <th>Nombre de projets incubés</th>
+                    <th>Nombre d'entreprises créées</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemple de données initiales -->
+                <tr>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>Privé</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>
+                        <button class="action-btn btn-edit">Modifier</button>
+                        <button class="action-btn btn-delete">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-footer">
+            <button id="downloadBtn">Télécharger</button>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+      <script src="../js/jquery.min.js"></script>
+      <!-- JavaScript de DataTables -->
+   <script src="../js/datatables.min.js"></script> 
+    <!-- Script pour gérer DataTables -->
+    <script src="../js/association.js"></script>
+    
+</body>
+</html>

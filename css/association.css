@@ -1,0 +1,115 @@
+.container {
+    margin: 20px;
+}
+
+/* Style des boutons */
+#importBtn, #downloadBtn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#importBtn:hover, #downloadBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Positionnement du bouton Importer */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Positionnement du bouton Télécharger */
+.table-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #28a745;
+}
+
+.btn-edit:hover {
+    background-color: #218838;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+   /* background-color: #f4f4f4;*/
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile span {
+    font-size: 24px;
+    cursor: pointer;
+}
+.test{
+    width: 400Px;
+    background-color: white;
+    padding: 10px;
+    border: 1Px solid black;
+    border-radius: 15px;
+    margin: 0Px auto;
+}
+
+
+
+/* Cache l'input file natif */
+#fileInput {
+    display: none;
+}
+
+/* Style du bouton personnalisé */
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+}
+
+.custom-file-label:hover {
+    background-color: red;
+}
+
+.custom-file-label:active {
+    transform: scale(0.98);
+}
