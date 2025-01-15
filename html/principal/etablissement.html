@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/association.css">
+    <link rel="stylesheet" href="../../css/datatables.min.css">
     <link rel="stylesheet" href="../../css/seibar.css">
+    
+    <title>Document</title>
+    
+    
+    
 </head>
 <body>
     
@@ -19,15 +25,15 @@
                 <ul>
                     <li><span>🏫</span> Établissement</li>
                     <li class="active"><span>📋</span> Questionnaires</li>
-                    <li><span>🤝</span> Association</li>
-                    <li><span>🏢</span> Établissement</li>
-                    <li><span>📚</span> Bibliothèque</li>
-                    <li><span>👨‍🏫</span> Enseignant</li>
-                    <li><span>🔧</span> Équipement</li>
-                    <li><span>👨‍🎓</span> Étudiant</li>
-                    <li><span>🏠</span> Locaux</li>
-                    <li><span>📖</span> Ouvrage</li>
-                    <li><span>👩‍💼</span> Personnel Administratif</li>
+                    <li  onclick="loadContent('../association.html', event)"><span >🤝</span> Association</li>
+                    <li><span >🏢</span> Établissement</li>
+                    <li onclick="loadContent('../bibloteque.html', event)"><span >📚</span> Bibliothèque</li>
+                    <li onclick="loadContent('../enseignant.html', event)"><span>👨‍🏫</span> Enseignant</li>
+                    <li onclick="loadContent('../equipement.html', event)"><span>🔧</span> Équipement</li>
+                    <li onclick="loadContent('../etudiant.html', event)"><span>👨‍🎓</span> Étudiant</li>
+                    <li onclick="loadContent('../locaux.html', event)"><span>🏠</span> Locaux</li>
+                    <li onclick="loadContent('../ouvrage.html', event)"><span>📖</span> Ouvrage</li>
+                    <li onclick="loadContent('../personnel.html', event)"><span>👩‍💼</span> Personnel Administratif</li>
                     <li><span>⬇️</span> Importation des données</li>
                 </ul>
             </nav>
@@ -45,22 +51,41 @@
             <section class="synthese">
                 <div class="box"><h2 style="color: white;">ÉTABLISSEMENT SUPÉRIEUR « PLATEFORME »</h2>
                     <div>- - - - - - - - - - - - </div>
-                    <h3 style="color: white;">SYNTÈSE</h3></div>
-                <div class="cards" id="main-content">
-                    <div class="card" id="association" >Association<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="bibloteque">Bibliothèque<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="enseignent">Enseignant<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="equipement">Équipement<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="etudiant">Étudiant<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="locaux">Locaux<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="ouvrage">Ouvrage<br><span>(Nb renseigné)</span></div>
-                    <div class="card" id="personnel">Personnel Administratif<br><span>(Nb renseigné)</span></div>
+                    <h3 style="color: white;">SYNTÈSE</h3>
                 </div>
+
+                <div id="main-content">
+                    <div class="cards" >
+                        <div class="card" id="association"  >Association<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="bibloteque">Bibliothèque<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="enseignent">Enseignant<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="equipement">Équipement<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="etudiant">Étudiant<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="locaux">Locaux<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="ouvrage">Ouvrage<br><span>(Nb renseigné)</span></div>
+                        <div class="card" id="personnel">Personnel Administratif<br><span>(Nb renseigné)</span></div>
+                    </div>
+                </div>
+                
             </section>
         </main>
        
-    </div>
 
+
+        
+        
+    </div>
    
+    
+  
+   
+    <!-- jQuery -->
+    <script src="../../js/onepage.js"></script>
+  <script src="../../js/jquery.min.js"></script>
+    <!-- JavaScript de DataTables -->
+  <script src="../../js/datatables.min.js"></script> 
+  <!-- Script pour gérer DataTables -->
+  <script src="../../js/association.js"></script>
+  
 </body>
 </html>
