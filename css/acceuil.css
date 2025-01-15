@@ -97,3 +97,15 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.simple-footer {
+    background-color: rgb(27, 26, 26); 
+    color: white; 
+    text-align: center;
+    padding: 10px 0; 
+    font-size: 14px; 
+    font-weight: bold; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}

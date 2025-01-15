@@ -44,9 +44,10 @@ $(document).ready(function () {
 
     // Événement pour "Supprimer"
     $('#example').on('click', '.btn-delete', function () {
-        if (confirm("Voulez-vous vraiment supprimer cette ligne ?")) {
-            table.row($(this).parents('tr')).remove().draw();
-        }
+        // if (confirm("Voulez-vous vraiment supprimer cette ligne ?")) {
+        //     table.row($(this).parents('tr')).remove().draw();
+        // }
+        alert("Fonction de suppresion en cours de développement.");
     });
 
     // Événement pour "Modifier"

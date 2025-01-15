@@ -127,8 +127,18 @@ body {
     font-size: 14px;
 }
 
+.card:hover{
+    background-color: red;
+    color: white;
+}
+
+
 .card span {
     color: #dd4c41;
+    font-weight: bold;
+}
+.card span:hover{
+    color: #fff;
     font-weight: bold;
 }
 
