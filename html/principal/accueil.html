@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/acceuil.css">
+    <link rel="stylesheet" href="../../css/connexion.css">
+    
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
 
            <div class="direct">
             <div class="logo">Logo dp</div>
-            <div class="test"> <h1>Direction de la Planification</h1> </div>
+            <div class="tests"> <h1>Direction de la Planification</h1> </div>
            </div>
             <img src="logo-right.png" alt="Logo Droit" class="logo-right">
         </div>
@@ -39,16 +41,16 @@
                 &#9776;
             </div>
             <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
+                <li><a href="#" onclick="loadContent('../questionnaire.html', event)">Accueil</a></li>
                 <li><a href="#">Programmes & Projets</a></li>
                 <li><a href="#">Statistiques</a></li>
                 <li class="dropdown">
                     <a href="#">Enquêtes</a>
                     <ul class="dropdown-menu">
                         <li><a href="#"></a></li>
-                        <li><a href="#">Enseignement Supérieur</a></li>
-                        <li><a href="#">CROU</a></li>
-                        <li><a href="#">Recherche et Innovation</a></li>
+                        <li><a href="#" onclick="loadContent('../connexiones.html', event)" >Enseignement Supérieur</a></li>
+                        <li><a href="#" onclick="loadContent('../connexioncrou.html', event)">CROU</a></li>
+                        <li><a href="#" onclick="loadContent('../connexionri.html', event)">Recherche et Innovation</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Carte Universitaire</a></li>
@@ -59,7 +61,7 @@
 
 
 
-    <div id="box">
+    <div id="main-content">
         <div class="container">
             <!-- Section Photo et Mot du Directeur -->
             <div class="photo-mot">
@@ -104,6 +106,7 @@
     </footer>
     
 
-<script src="../js/nav.js"></script>
+<script src="../../js/nav.js"></script>
+<script src="../../js/onepage.js"></script>
 </body>
 </html>
