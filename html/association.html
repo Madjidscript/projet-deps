@@ -18,17 +18,17 @@
 
     <div class="container">
         <div class="table-header">
-            <h2 >Tableau association</h2>
-            <!-- Bouton pour importer 
-            <label for="fileInput" style="margin-right: 10px;">
-                <input type="file" id="fileInput" accept=".csv" style="display: none;">
-                <button id="importBtn">Importer</button>
-            </label> -->
+            
+           
 
             <label for="fileInput" class="custom-file-label">
                 <span>📂 Importer un fichier</span>
             </label>
             <input type="file" id="fileInput" accept=".csv">
+
+            <button class="add-button" style="margin-left: 10px;">
+                <span>➕</span> Ajouter
+            </button>
         </div>
 
         <!-- Tableau DataTables -->
@@ -63,6 +63,7 @@
 
         <div class="table-footer">
             <button id="downloadBtn">Télécharger</button>
+            <div id="cards">Association<br><span>(Nb renseigné)</span></div>
         </div>
     </div>
 

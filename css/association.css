@@ -19,7 +19,7 @@
 /* Positionnement du bouton Importer */
 .table-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -27,7 +27,7 @@
 /* Positionnement du bouton Télécharger */
 .table-footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 .test{
-    width: 400Px;
+    width: 70%;
     background-color: white;
     padding: 10px;
     border: 1Px solid black;
@@ -112,4 +112,42 @@
 
 .custom-file-label:active {
     transform: scale(0.98);
+}
+
+
+.add-button {
+    background-color: #4caf50; /* Vert */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime la bordure */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Pointeur de la souris */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation au survol */
+}
+
+.add-button:hover {
+    background-color: #45a049; /* Couleur légèrement différente au survol */
+    transform: scale(1.05); /* Agrandissement léger */
+}
+
+.add-button:active {
+    background-color: #3e8e41; /* Couleur enfoncée */
+    transform: scale(0.98); /* Effet de clic */
+}
+
+.add-button span {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+
+#cards {
+    background-color: red;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: white;
 }
