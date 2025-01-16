@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/association.css">
+    <link rel="stylesheet" href="../css/datatables.min.css">
     <title>Document</title>
 </head>
 <body>
-   
+    <div class="containers">
+        <div class="table-header">
+            
+           
+
+            <label for="fileInput" class="custom-file-label">
+                <span>📂 Importer un fichier</span>
+            </label>
+            <input type="file" id="fileInput" accept=".csv">
+
+            <button class="add-button" style="margin-left: 10px;">
+                <span>➕</span> Ajouter
+            </button>
+        </div>
+
+        <!-- Tableau DataTables -->
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>N</th>
+                    <th>MATRICULE</th>
+                    <th>Nom et Prénoms</th>
+                    <th>Sexe (1)</th>
+                    <th>Date de naissance</th>
+                    <th>Pays (2)</th>
+                    <th>Diplôme</th>
+                    <th>Grade</th>
+                    <th>Statut (3)</th>
+                    <th>Date 1ère prise de service</th>
+                    <th>Fonction</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemple de données initiales -->
+                <tr>
+                    
+                    <td>1</td>
+                    <td>Exemple 1</td>
+                    <td>Exemple Nom</td>
+                    <td>1</td>
+                    <td>01/01/2000</td>
+                    <td>Pays Exemple</td>
+                    <td>Diplôme Exemple</td>
+                    <td>Grade Exemple</td>
+                    <td>Actif</td>
+                    <td>01/01/2022</td>
+                    <td>Fonction Exemple</td>
+
+                    <td class="gris">
+                        <button class="action-btn btn-edit" style="margin-bottom: 2px;">Modifier</button>
+                        <button class="action-btn btn-delete">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-footer">
+            <button id="downloadBtn">Télécharger</button>
+            <div id="cards">personnel<br><span>(Nb renseigné)</span></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+      <script src="../js/jquery.min.js"></script>
+      <!-- JavaScript de DataTables -->
+   <script src="../js/datatables.min.js"></script> 
+    <!-- Script pour gérer DataTables -->
+    <script src="../js/personnel.js"></script>
+    
 </body>
 </html>

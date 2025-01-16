@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/association.css">
+    <link rel="stylesheet" href="../css/datatables.min.css">
     <title>Document</title>
 </head>
 <body>
-    locaux
+    <div class="containers">
+        <div class="table-header">
+            
+           
+
+            <label for="fileInput" class="custom-file-label">
+                <span>📂 Importer un fichier</span>
+            </label>
+            <input type="file" id="fileInput" accept=".csv">
+
+            <button class="add-button" style="margin-left: 10px;">
+                <span>➕</span> Ajouter
+            </button>
+        </div>
+
+        <!-- Tableau DataTables -->
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>MATRICULE</th>
+                <th>Nom et Prénoms</th>
+                <th>Sexe (1)</th>
+                <th>Date de naissance (2)</th>
+                <th>Pays</th>
+                <th>Année d’obtention du BAC</th>
+                <th>Série du BAC (3)</th>
+                <th>Année académique de première inscription</th>
+                <th>Diplôme préparé</th>
+                <th>Type de handicap (4)</th>
+                <th>Niveau d’étude</th>
+                <th>Redoublant (5)</th>
+                <th>Statut (6)</th>
+                <th>Type de formation (7)</th>
+                <th>Résultat fin d'année (8)</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemple de données initiales -->
+                <tr>
+                    <td>1</td>
+                    <td>20231001</td>
+                <td>Dupont Jean</td>
+                <td>M</td>
+                <td>1999-05-14</td>
+                <td>France</td>
+                <td>2017</td>
+                <td>S</td>
+                <td>2017-2018</td>
+                <td>LF</td>
+                <td>Aucun</td>
+                <td>Licence 3</td>
+                <td>Non</td>
+                <td>Actif</td>
+                <td>Formation initiale</td>
+                <td>Réussi</td>
+                    <td class="gris">
+                        <button class="action-btn btn-edit" style="margin-bottom: 2px;">Modifier</button>
+                        <button class="action-btn btn-delete">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-footer">
+            <button id="downloadBtn">Télécharger</button>
+            <div id="cards">Locaux<br><span>(Nb renseigné)</span></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+      <script src="../js/jquery.min.js"></script>
+      <!-- JavaScript de DataTables -->
+   <script src="../js/datatables.min.js"></script> 
+    <!-- Script pour gérer DataTables -->
+    <script src="../js/locaux.js"></script>
+    
 </body>
 </html>

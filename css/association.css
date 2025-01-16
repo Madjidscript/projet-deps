@@ -163,3 +163,13 @@
     font-size: 14px;
     color: white;
 }
+
+th{
+    background-color: red;
+    color: white;
+}
+
+.gris{
+    background-color: #ccc;
+    border-bottom: 1Px solid white;
+}
